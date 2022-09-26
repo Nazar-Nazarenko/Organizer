@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  td, th {
+    border: 1px solid #dadce0;
+    padding: 10px 12px;
+  }
+  td {
+    text-align: center;
+    width: 5rem;
+    height: 3rem;
+    span {
+      padding: 7px 7px;
+    }
+    &.disabled {
+      opacity: 0.4;
+    }
+    &:hover:not(.disabled) {
+      cursor: pointer;
+      background: darkgray;
+    }
+  }
+  .active {
+    color: cornflowerblue;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #dadce0;
+  }
+  .selected {
+    color: dodgerblue;
+    font-weight: bold;
+  }
+
+}

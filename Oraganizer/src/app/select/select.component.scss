@@ -1,0 +1,30 @@
+.wrap {
+  width: 350px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  .selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+  }
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.arrow-left {
+  @extend .arrow;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent #000000 transparent transparent;
+}
+.arrow-right {
+  @extend .arrow;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent #000000;
+}

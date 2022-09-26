@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="today">
+    <div class="wrap">
+      <span class="title">Today:</span>
+      <span>fdgfhgfghfghfh</span>
+    </div>
+    <button>Remove</button>
+  </div>
+  <div class="selected">
+    <span class="date">Selected date:</span>
+    <span>{{date | async | dateTransform: 'DD.MM.YYYY' }}</span>
+  </div>
+  <div class="content">
+    <ul></ul>
+  </div>
+
+  <div class="bottom">
+    <form class="task-form"
+          [formGroup]="form"
+          (ngSubmit)="submit()">
+      <input type="text" placeholder="Enter task" formControlName="title">
+      <button type="submit" [disabled]="isDisabled">Add event</button>
+    </form>
+  </div>
+</div>

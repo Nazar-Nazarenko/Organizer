@@ -1,0 +1,7 @@
+<div class="wrap">
+  <div class="selector">
+    <span class="arrow-left" (click)="toggleMonth(-1)"></span>
+    <span  class="name">{{ currentDate | async | dateTransform }}</span>
+    <span class="arrow-right" (click)="toggleMonth(1)"></span>
+  </div>
+</div>
